@@ -33,13 +33,13 @@
             no-caps />
         </div>
       </div>
-      <q-separator size="15px" color="pink-2" class="divider"/>
+      <q-separator size="15px" color="blue-2" class="divider"/>
       <q-list separator>
         <transition-group
           appear
           enter-active-class="animated fadeIn"
           leave-active-class="animated fadeOut"
-        >
+          >
           <q-item
             v-for="qweet in qweets"
             :key="qweet.date"
@@ -66,14 +66,14 @@
                 <q-btn
                 flat
                 round
-                color="pink"
+                color="blue"
                 icon="far fa-comment"
                 size="sm"
                 />
                 <q-btn
                 flat
                 round
-                color="pink"
+                color="blue"
                 icon="fas fa-retweet"
                 size="sm"
                 />
@@ -81,7 +81,7 @@
                 @click="toggleLiked(qweet)"
                 flat
                 round
-                :color="qweet.liked ? 'pink' : 'pink'"
+                :color="qweet.liked ? 'blue' : 'blue'"
                 :icon="qweet.liked ? 'fas  fa-heart' : 'far fa-heart'"
                 size="sm"
                 />
@@ -89,7 +89,7 @@
                 @click="deleteQweet(qweet)"
                  flat
                 round
-                color="pink"
+                color="blue"
                 icon="fas fa-trash"
                 size="sm"
                 />
